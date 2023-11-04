@@ -1,0 +1,207 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f7f7f7;
+}
+
+header {
+    top: 0%;
+    left: 19%;
+    height: 5%;
+    text-align: center;
+    background-color: dimgrey; 
+}
+
+.gauche{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 19%;
+    height: 100%;
+    border: none ;
+    background-color: black;
+    color: #f7f7f7;
+    text-align: center;
+}
+.droite{
+    position: absolute;
+    top: 0;
+    left: 19%;
+    width: 81%;
+    height: 100%;
+    border: 2px solid;
+    background-color: dimgrey;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+}
+h1 {
+    margin: 0;
+    font-family: "Fira Sans", Arial, sans-serif;
+    font-size: xx-large;
+}
+
+h2 {
+    margin: 0;
+    font-family: "Fira Sans", Arial, sans-serif;
+    font-size: medium;
+
+}
+.bandeau{
+    position: absolute;
+    left: 5%;
+    width: 90%;
+    text-align:center;
+    color: rgb(247, 245, 242);
+    border: 2px solid;
+    border-radius: 20px;
+    border-width: 50%;
+    /*border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    */background-color: #080000;
+}
+
+.infos{
+    color: #f8f1f1;
+    text-align: center;
+    font-size: small;
+}
+
+.networks{
+    color: #f8f1f1;
+    text-align: center;
+    font-size: small;
+    position: relative;
+    top: 15%;    
+
+}
+.education {
+    color: #f8f1f1;
+    text-align: center;
+    font-size: small;
+    position: relative;
+    top: 20%;    
+}
+
+.experience{
+    color: #f8f1f1;
+    text-align: center;
+    font-size: small;
+    position: relative;
+    top: 25%;
+}
+
+.competences{
+    color: #f8f1f1;
+    text-align:center;
+    font-size: small;
+    position: relative;
+    top: 30%;
+}
+
+.langues {
+    color: #f8f1f1;
+    text-align: center;
+    font-size: small;
+    position: relative;
+    top: 35%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.photo{
+    display: flex;
+    position: relative;
+    text-align: center;
+    left: 15%;
+    max-width: 70%;
+    border-radius: 100px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+}    
+
+.icone{
+    position: relative;
+    right: 0px;
+    max-width: 50px;
+}
+
+.container {
+    position: absolute;
+    left: 5%;
+    width: 90%;
+    height: 30px;
+    background-color: #000;
+    overflow: hidden;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+
+
+.rotation {
+    left: 5%;
+    width: 100%;
+    text-align:center;
+    color: rgb(247, 245, 242);
+    border-radius: 20px;
+    border-width: 50%;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    
+    background-color: #080000;
+    animation: move 5s ;
+    animation-duration: 10 s;
+}
+
+@keyframes move {
+    0% {
+        left: 0;
+    }
+    25% {
+        left: calc(100% - 30px);
+        transform: scaleX(-1);
+    }
+    50% {
+        left: calc(100% - 30px);
+        transform: scaleX(-1);
+    }
+    75% {
+        left: 0;
+        transform: scaleX(1);
+    }
+    100% {
+        left: 0;
+        transform: scaleX(1);
+    }
+}
+
+.bounce {
+    position: relative;
+    width: 60%;
+    animation: bounce 5s ;
+    animation-duration: 10 s;
+    
+}
+
+
+@keyframes bounce {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 50%;
+    }
+    100% {
+      left: 0;
+    }
+  }
